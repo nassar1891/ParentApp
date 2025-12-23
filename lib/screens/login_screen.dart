@@ -74,12 +74,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     padding: const EdgeInsets.all(24),
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.2),
-                      shape: BoxShape.circle,
+                      shape: BoxShape.rectangle,
+                      borderRadius: BorderRadius.circular(12),
                     ),
-                    child: Icon(
-                      Icons.school_rounded,
-                      size: 80,
-                      color: Colors.white,
+                    child: Image.asset(
+                      'assets/images/white-logo.png',
+                      width: 120,
+                      height: 120,
+                      fit: BoxFit.contain,
                     ),
                   ),
                   const SizedBox(height: 32),

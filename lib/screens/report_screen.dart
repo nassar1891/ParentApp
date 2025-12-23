@@ -56,7 +56,7 @@ class _ReportScreenState extends State<ReportScreen> with SingleTickerProviderSt
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('${widget.month.monthName} ${widget.month.year}'),
+        title: Text('${widget.month.monthName}'),
         centerTitle: true,
         bottom: _report != null
             ? TabBar(

@@ -18,7 +18,7 @@ class ParentApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF6366F1),
+          seedColor: const Color(0xFF89CFF0), // Baby blue
           brightness: Brightness.light,
         ),
         fontFamily: 'Cairo',
@@ -26,7 +26,7 @@ class ParentApp extends StatelessWidget {
       darkTheme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF6366F1),
+          seedColor: const Color(0xFF89CFF0), // Baby blue
           brightness: Brightness.dark,
         ),
         fontFamily: 'Cairo',
