@@ -18,7 +18,7 @@ class ParentApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF89CFF0), // Baby blue
+          seedColor: const Color(0xFF2C5F8D), // Much darker blue
           brightness: Brightness.light,
         ),
         fontFamily: 'Cairo',
@@ -26,7 +26,7 @@ class ParentApp extends StatelessWidget {
       darkTheme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF89CFF0), // Baby blue
+          seedColor: const Color(0xFF2C5F8D), // Much darker blue
           brightness: Brightness.dark,
         ),
         fontFamily: 'Cairo',
@@ -83,11 +83,12 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
-                Icons.school_rounded,
-                size: 100,
-                color: Colors.white,
-              ),
+              Image.asset(
+                      'assets/images/white-logo.png',
+                      width: 120,
+                      height: 120,
+                      fit: BoxFit.contain,
+                    ),
               const SizedBox(height: 24),
               Text(
                 'تطبيق الوالدين',

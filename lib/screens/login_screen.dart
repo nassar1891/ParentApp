@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../services/auth_service.dart';
 import 'home_screen.dart';
 
@@ -77,32 +78,30 @@ class _LoginScreenState extends State<LoginScreen> {
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    child: Image.asset(
-                      'assets/images/white-logo.png',
-                      width: 120,
-                      height: 120,
-                      fit: BoxFit.contain,
+                    child: SvgPicture.asset(
+                      'assets/images/tammenni.svg',
+                      width: 240,
+                      height: 240,
                     ),
                   ),
                   const SizedBox(height: 32),
                   
                   // Title
                   Text(
-                    'تطبيق الوالدين',
+                    'إحدى مشروعات',
                     style: TextStyle(
-                      fontSize: 36,
+                      fontSize: 30,
+                      fontFamily: 'Arial',
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ),
                   ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'متابعة تقدم الطالب',
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: Colors.white.withOpacity(0.9),
+                  Image.asset(
+                      'assets/images/white-logo.png',
+                      width: 200,
+                      height: 120,
+                      fit: BoxFit.contain,
                     ),
-                  ),
                   const SizedBox(height: 48),
                   
                   // Login Card
