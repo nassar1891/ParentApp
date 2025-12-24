@@ -5,7 +5,7 @@ class ApiConfig {
   // Change this to your API server address
   // For local development: 'http://localhost:5000' or 'http://10.0.2.2:5000' for Android emulator
   // For production: 'https://your-api-domain.com'
-  static const String baseUrl = 'http://www.teachermanager.mahmoudnassar.com';
+  static const String baseUrl = 'https://teachermanager.mahmoudnassar.com';
 
   // API Endpoints
   static const String authBase = '/api/parent/auth';
