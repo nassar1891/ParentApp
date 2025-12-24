@@ -64,7 +64,7 @@ class _ReportScreenState extends State<ReportScreen> with SingleTickerProviderSt
                 isScrollable: true,
                 tabs: const [
                   Tab(text: 'نظرة عامة'),
-                  Tab(text: 'الاختبارات'),
+                  Tab(text: 'التسميعات'),
                   Tab(text: 'الامتحانات'),
                   Tab(text: 'الواجبات'),
                   Tab(text: 'الحضور'),
@@ -142,7 +142,7 @@ class _ReportScreenState extends State<ReportScreen> with SingleTickerProviderSt
               child: Column(
                 children: [
                   Text(
-                    'الأداء العام',
+                    'المجموع الكلي',
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
@@ -181,7 +181,7 @@ class _ReportScreenState extends State<ReportScreen> with SingleTickerProviderSt
           
           // Performance Breakdown
           _buildStatCard(
-            'الاختبارات',
+            'التسميعات',
             _report!.testPercentage,
             Icons.quiz_outlined,
             '${_report!.totalTestMarks.toStringAsFixed(1)} / ${_report!.totalTestFullMarks.toStringAsFixed(1)}',
@@ -336,7 +336,7 @@ class _ReportScreenState extends State<ReportScreen> with SingleTickerProviderSt
 
   Widget _buildTestsTab() {
     if (_report!.tests.isEmpty) {
-      return _buildEmptyState('لا توجد اختبارات', Icons.quiz_outlined);
+      return _buildEmptyState('لا توجد تسميعات', Icons.quiz_outlined);
     }
     
     return ListView.builder(
