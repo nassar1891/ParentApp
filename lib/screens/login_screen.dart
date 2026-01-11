@@ -66,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
         child: SafeArea(
           child: Center(
             child: SingleChildScrollView(
-              padding: const EdgeInsets.all(24.0),
+              padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -75,34 +75,39 @@ class _LoginScreenState extends State<LoginScreen> {
                     padding: const EdgeInsets.all(24),
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.2),
-                      shape: BoxShape.rectangle,
-                      borderRadius: BorderRadius.circular(12),
+                      shape: BoxShape.circle,
                     ),
                     child: SvgPicture.asset(
-                      'assets/images/tammenni.svg',
-                      width: 240,
-                      height: 240,
+                      'assets/images/ahmedlogo.svg',
+                      width: 180,
+                      height: 180,
                     ),
                   ),
-                  const SizedBox(height: 32),
                   
                   // Title
                   Text(
-                    'إحدى مشروعات',
+                    'تطبيق ولي الأمر',
                     style: TextStyle(
-                      fontSize: 30,
-                      fontFamily: 'Arial',
-                      fontWeight: FontWeight.bold,
+                      fontSize: 28,
+                      fontWeight: FontWeight.w800,
                       color: Colors.white,
+                      letterSpacing: 1.2,
+                      shadows: [
+                        Shadow(
+                          offset: Offset(0, 2),
+                          blurRadius: 4,
+                          color: Colors.black.withOpacity(0.3),
+                        ),
+                        Shadow(
+                          offset: Offset(0, 4),
+                          blurRadius: 8,
+                          color: Colors.black.withOpacity(0.2),
+                        ),
+                      ],
                     ),
                   ),
-                  Image.asset(
-                      'assets/images/white-logo.png',
-                      width: 200,
-                      height: 120,
-                      fit: BoxFit.contain,
-                    ),
-                  const SizedBox(height: 48),
+                  
+                  const SizedBox(height: 24),
                   
                   // Login Card
                   Card(
@@ -111,7 +116,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(24.0),
+                      padding: const EdgeInsets.all(20.0),
                       child: Form(
                         key: _formKey,
                         child: Column(
@@ -119,12 +124,12 @@ class _LoginScreenState extends State<LoginScreen> {
                           children: [
                             Text(
                               'تسجيل الدخول',
-                              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                              style: Theme.of(context).textTheme.titleLarge?.copyWith(
                                 fontWeight: FontWeight.bold,
                               ),
                               textAlign: TextAlign.center,
                             ),
-                            const SizedBox(height: 24),
+                            const SizedBox(height: 16),
                             
                             // Student Code Field
                             TextFormField(

@@ -13,7 +13,7 @@ class ParentApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'تطبيق الوالدين',
+      title: 'Mr. Ahmed Ebrahim',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
