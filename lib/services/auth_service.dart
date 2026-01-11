@@ -29,7 +29,7 @@ class AuthService {
           'Content-Type': 'application/json',
         },
         body: jsonEncode({
-          'studentCode': studentCode,
+          'loginCode': studentCode,
         }),
       ).timeout(ApiConfig.connectionTimeout);
 
